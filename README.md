@@ -1,0 +1,2 @@
+# stavropol
+diploma e
