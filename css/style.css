@@ -307,8 +307,21 @@ template {
 [hidden] {
   display: none; }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 html {
   font-size: 14px; }
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto; }
+  .container--small {
+    width: 90%;
+    max-width: 1098px;
+    margin: 0 auto; }
 
 @font-face {
   font-family: 'Myriad Pro';
@@ -330,6 +343,8 @@ html {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .header__logo {
+    margin-left: -1px; }
   .header__nav {
     -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
@@ -346,8 +361,6 @@ html {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 2px;
-    margin-top: 3px;
     min-width: 575px; }
     .header__nav-link {
       color: #dddddd;
@@ -356,7 +369,7 @@ html {
       font-size: 1.14rem;
       font-weight: 600;
       margin-left: 10px;
-      padding-top: 10px;
+      padding-top: 1.45rem;
       padding-bottom: 1.3rem;
       border-bottom: 2px solid transparent;
       -webkit-transition: 0.3s all;
@@ -370,13 +383,12 @@ html {
     margin-right: 19px; }
   .logo__text {
     font-family: "Istok Web", sans-serif;
-    font-weight: 600;
-    font-size: 2.4rem;
+    font-weight: bold;
+    font-size: 2.571rem;
     width: 240px;
     word-break: break-all;
     display: inline-block;
-    line-height: 2.1rem;
-    letter-spacing: 1.34px; }
+    line-height: 2.1rem; }
     .logo__text--small {
       font-size: 1.2rem;
       letter-spacing: normal;
@@ -386,10 +398,34 @@ html {
 .hero {
   height: 100vh;
   background: #242f24 url(../img/hero/hero.jpg) center/cover no-repeat;
-  padding-top: 9.8vh; }
+  padding-top: 8.1vh;
+  max-height: 1001px; }
   .hero__header {
     margin: 0 auto;
     max-width: 88%; }
+  .hero__title {
+    max-width: 31.85rem;
+    font-family: "Istok Web", sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: -2.3px;
+    line-height: 1;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 2.8rem;
+    margin-bottom: 0; }
+  .hero__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.74rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #dddddd;
+    max-width: 19.5rem;
+    margin-top: 1.45rem; }
 
 @media screen and (min-width: 991px) {
   .header__nav-link:hover {

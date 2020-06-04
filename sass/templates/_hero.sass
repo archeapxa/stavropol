@@ -3,14 +3,12 @@
   justify-content: space-between
   align-items: center
   &__logo
-    // margin-left: 1vw
+    margin-left: -1px
   &__nav
     flex-basis: 40%
     display: flex
     justify-content: space-between
     align-items: center
-    margin-right: 2px
-    margin-top: 3px
     min-width: 575px
     &-link
       color: #dddddd
@@ -19,7 +17,7 @@
       font-size: 1.14rem
       font-weight: 600
       margin-left: 10px
-      padding-top: 10px
+      padding-top: 1.45rem
       padding-bottom: 1.3rem
       border-bottom: 2px solid transparent
       transition: 0.3s all
@@ -31,13 +29,13 @@
     margin-right: 19px
   &__text
     font-family: "Istok Web", sans-serif
-    font-weight: 600
-    font-size: 2.4rem
+    font-weight: bold
+    font-size: 2.571rem
     width: 240px
     word-break: break-all
     display: inline-block
     line-height: 2.1rem
-    letter-spacing: 1.34px
+    // letter-spacing: 1.34px
     &--small
       font-size: 1.2rem
       letter-spacing: normal
@@ -47,7 +45,31 @@
 .hero
   height: 100vh
   background: #242f24 url(../img/hero/hero.jpg) center / cover no-repeat
-  padding-top: 9.8vh
+  padding-top: 8.1vh
+  max-height: 1001px
   &__header
     margin: 0 auto
     max-width: 88%
+  &__title
+    max-width: 31.85rem
+    font-family: "Istok Web", sans-serif
+    font-size: 6rem
+    font-weight: bold
+    letter-spacing: -2.3px
+    line-height: 1
+    text-align: left
+    color: #ffffff
+    margin-top: 2.8rem
+    margin-bottom: 0
+  &__text
+    font-family: "Open Sans", sans-serif
+    font-size: 1.74rem
+    font-weight: 600
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.5
+    letter-spacing: normal
+    text-align: left
+    color: #dddddd
+    max-width: 19.5rem
+    margin-top: 1.45rem
