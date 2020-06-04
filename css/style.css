@@ -319,7 +319,7 @@ html {
   max-width: 1440px;
   margin: 0 auto; }
   .container--small {
-    width: 90%;
+    width: 70%;
     max-width: 1098px;
     margin: 0 auto; }
 
@@ -361,7 +361,7 @@ html {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 575px; }
+    min-width: 41rem; }
     .header__nav-link {
       color: #dddddd;
       text-decoration: none;
@@ -372,20 +372,20 @@ html {
       padding-top: 1.45rem;
       padding-bottom: 1.3rem;
       border-bottom: 2px solid transparent;
-      -webkit-transition: 0.3s all;
-      -o-transition: 0.3s all;
-      transition: 0.3s all; }
+      -webkit-transition: 0.3s border-bottom;
+      -o-transition: 0.3s border-bottom;
+      transition: 0.3s border-bottom; }
 
 .logo {
   color: white;
   text-decoration: none; }
   .logo__image {
-    margin-right: 19px; }
+    margin-right: 1.357rem; }
   .logo__text {
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
     font-size: 2.571rem;
-    width: 240px;
+    max-width: 17.14rem;
     word-break: break-all;
     display: inline-block;
     line-height: 2.1rem; }
@@ -431,3 +431,7 @@ html {
   .header__nav-link:hover {
     color: white;
     border-bottom: 2px solid white; } }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; } }
