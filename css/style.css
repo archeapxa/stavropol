@@ -488,7 +488,8 @@ html {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: relative; }
   .showcase__places-title {
     max-width: 275px;
     font-family: "Open Sans", sans-serif;
@@ -530,14 +531,12 @@ html {
     color: black; }
     .showcase__places-all-icon {
       padding-left: 1.3rem; }
-  .showcase__swiper-container {
-    width: 66.8%;
-    margin-left: auto;
-    margin-right: 0;
-    padding-left: 50px;
-    padding-right: 50px; }
+  .showcase__swiper-box {
+    width: 58.5%;
+    position: relative; }
   .showcase__swiper-slide {
-    background-color: white; }
+    background-color: white;
+    cursor: pointer; }
     .showcase__swiper-slide-play {
       position: absolute;
       top: 50%;
@@ -557,14 +556,18 @@ html {
     height: 54px;
     width: 54px;
     background: #f7f4f2;
-    border-radius: 50%; }
+    border-radius: 50%;
+    left: -3rem;
+    margin-top: -27px; }
     .showcase__swiper-prev::after {
       content: ''; }
   .showcase__swiper-next {
     height: 54px;
     width: 54px;
     background: #f7f4f2;
-    border-radius: 50%; }
+    border-radius: 50%;
+    right: -3rem;
+    margin-top: -27px; }
     .showcase__swiper-next::after {
       content: ''; }
 
@@ -576,13 +579,19 @@ html {
     background-color: #f7f4f2; }
   .showcase__swiper-slide:hover {
     background-color: #17bebb; }
-  .showcase__swiper-slide:hover .showcase__swiper-slide-image {
-    opacity: 0.18; }
-  .showcase__swiper-slide:hover .showcase__swiper-slide-play {
-    display: none; }
-  .showcase__swiper-slide:hover .showcase__swiper-slide-play-hovered {
-    display: block; } }
+    .showcase__swiper-slide:hover .showcase__swiper-slide-image {
+      opacity: 0.18; }
+    .showcase__swiper-slide:hover .showcase__swiper-slide-play {
+      display: none; }
+    .showcase__swiper-slide:hover .showcase__swiper-slide-play-hovered {
+      display: block; } }
 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; } }
+
+@media screen and (max-width: 1090px) {
+  .showcase__video-title {
+    margin-left: 50px; }
+  .showcase__video-description {
+    margin-left: 50px; } }

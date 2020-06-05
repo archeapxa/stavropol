@@ -9,9 +9,8 @@
     &__swiper-slide
       &:hover
         background-color: #17bebb
-      &:hover .showcase__swiper-slide-image
-        opacity: 0.18
-      &:hover
+        & .showcase__swiper-slide-image
+          opacity: 0.18
         & .showcase__swiper-slide-play
           display: none
         & .showcase__swiper-slide-play-hovered
@@ -21,3 +20,11 @@
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
+
+@media screen and ( max-width: 1090px )
+  .showcase
+    &__video
+      &-title
+        margin-left: 50px
+      &-description
+        margin-left: 50px

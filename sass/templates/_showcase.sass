@@ -46,6 +46,7 @@
     &-box
       display: flex
       justify-content: space-between
+      position: relative
     &-title
         max-width: 275px;
         font-family: "Open Sans", sans-serif
@@ -78,14 +79,19 @@
       &-icon
         padding-left: 1.3rem
   &__swiper
+    &-box
+      width: 58.5%
+      position: relative
     &-container
-      width: 66.8%
-      margin-left: auto
-      margin-right: 0
-      padding-left: 50px
-      padding-right: 50px
+      // overflow: visible
+      // margin-left: auto
+      // margin-right: 0
+      // padding-left: 50px
+      // padding-right: 50px
+    &-wrapper
     &-slide
       background-color: white
+      cursor: pointer
       &-play
         position: absolute
         top: 50%
@@ -102,7 +108,8 @@
       width: 54px
       background: #f7f4f2
       border-radius: 50% 
-      // left: -30px
+      left: -3rem
+      margin-top: -27px
       &::after
         content: ''
     &-next
@@ -110,5 +117,7 @@
       width: 54px
       background: #f7f4f2
       border-radius: 50%
+      right: -3rem
+      margin-top: -27px
       &::after
         content: ''
