@@ -26,6 +26,149 @@
   .showcase
     &__video
       &-title
-        margin-left: 50px
+        margin-left: 70px
       &-description
-        margin-left: 50px
+        margin-left: 70px
+    &__swiper
+      &-prev
+        top: 3rem
+      &-next
+        top: 3rem
+        
+@media screen and ( max-width: 992px )
+  .header
+    &__nav
+      display: none
+  .hero
+    max-height: 660px
+  .showcase
+    &__video
+      &-box
+        transform: translateY(0)
+        margin-bottom: 5rem
+        margin-top: 14rem
+        width: 100%
+        height: 400px
+        // padding-bottom: 15%
+        // padding-top: 15%
+        position: relative
+      &-title
+        padding-top: 3rem
+        position: absolute
+        top: -13rem
+        right: 50%
+        transform: translateX(50%)
+        color: black
+        margin-left: 0
+        width: 70%
+        display: flex
+        justify-content: center
+      &-description
+        padding-top: 3rem
+        position: absolute
+        top: -9.5rem
+        right: 50%
+        transform: translateX(50%)
+        color: #ff6600
+        margin-left: 0
+        width: 70%
+        display: flex
+        justify-content: center
+    &__places
+      &-box
+        flex-direction: column
+        align-items: center
+        justify-content: center
+      &-title
+        width: 100%
+        text-align: center
+      &-all
+        text-align: center
+        margin-top: 1rem
+      &-text
+        width: 100%
+        align-items: center
+    &__swiper
+      &-box
+        width: 100%
+        margin-top: 2rem
+      &-next
+        top: 27%
+        right: -27px
+      &-prev
+        top: 27%
+        left: -27px
+@media screen and ( max-width: 768px )
+  .showcase
+    &__swiper
+      &-next
+        top: 35%
+      &-prev
+        top: 35%
+    &__video
+      &-box
+        height: 320px
+@media screen and ( max-width: 640px )
+  .hero
+    max-height: 550px
+    &__title
+      font-size: 3.6rem
+  .showcase
+    &__swiper
+      &-next
+        top: 33%
+        height: 40px
+        width: 40px
+        right: 10px
+      &-prev
+        top: 33%
+        height: 40px
+        width: 40px
+        left: 10px
+    &__video
+      &-box
+        height: 250px
+        max-width: 480px
+        margin-top: 10rem
+        margin-bottom: 3rem
+      &-title
+        width: 100%
+        left: auto
+        right: auto
+        transform: translateX(0)
+        text-align: center
+        font-size: 2rem
+        top: -10rem
+      &-description
+        width: 100%
+        left: auto
+        right: auto
+        transform: translateX(0)
+        text-align: center
+        top: -7rem
+        
+@media screen and ( max-width: 460px )
+  .showcase
+    padding-bottom: 6rem
+    &__video
+      &-box
+        height: 140px
+        max-width: 280px
+        margin-bottom: 2rem
+      &-play
+        height: 45px
+        width: 45px
+      &-title
+        top: -11rem
+      &-description
+        top: -8rem
+    &__places
+      &-title
+        line-height: 1.3
+        font-size: 1.2rem
+        max-width: 100%
+        margin-top: 1rem
+      &-all
+        position: absolute
+        bottom: -4rem
+        margin-top: 0
