@@ -3,6 +3,20 @@
   .header__nav-link:hover
     color: white
     border-bottom: 2px solid white
+  .showcase__video-play:hover
+    background-color: #f7f4f2
+  .showcase
+    &__swiper-slide
+      &:hover
+        background-color: #17bebb
+      &:hover .showcase__swiper-slide-image
+        opacity: 0.18
+      &:hover
+        & .showcase__swiper-slide-play
+          display: none
+        & .showcase__swiper-slide-play-hovered
+          display: block
+
 
 @media screen and ( max-width: 1200px )
   html

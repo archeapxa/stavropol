@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/gpf8hbl.css">
   <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -45,21 +46,64 @@
   <!-- /.hero -->
   <main>
     <section class="section showcase">
-      <div class="container--small">
+      <div class="container--middle">
 
-          <div class="showcase__video-box">
-            <h2 class="showcase__video-title">Красоты Ставрополья</h2>
-            <span class="showcase__video-description">Надежный автомобиль — залог лучших впечатлений!</span>
-            <img class="showcase__video-play" src="img/showcase/play-icon.png" alt="Showcase Play Icon">
+        <div class="showcase__video-box">
+          <img class="showcase__video-play" src="img/showcase/play-icon.png" alt="Showcase Play Icon">
+          <h2 class="showcase__video-title">Красоты Ставрополья</h2>
+          <span class="showcase__video-description">Надежный автомобиль — залог лучших впечатлений!</span>
+        </div>
+        <!-- /.showcase__video-box -->
+
+
+        <div class="showcase__places-box">
+          
+        <div class="showcase__places-text">
+          <div class="showcase__places-title">
+            Интересные места Ставропольского края <span class="showcase__places-title--attention">эксклюзивно для вас!</span>
           </div>
-          <!-- /.showcase__video-box -->
+          <a href="#" class="showcase__places-all">Все видео <img class="showcase__places-all-icon" src="img/showcase/video-icon.svg"
+              alt="all places icon"></a>
+        </div>
+        <!-- /.showcase__slider-text -->
 
-        <!-- showcase__showcase-box -->
+        <!-- Slider main container -->
+        <div class="swiper-container showcase__swiper-container">
+
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper showcase__swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide showcase__swiper-slide">
+              <img class="showcase__swiper-slide-image" src="img/showcase/slide1.jpg" alt="Mountains Slide">
+              <img class="showcase__swiper-slide-play" src="img/showcase/play-icon.png" alt="play icon">
+              <img class="showcase__swiper-slide-play-hovered" src="img/showcase/play-icon-hovered.png" alt="Play Icon Hovered">
+            </div>
+            <div class="swiper-slide showcase__swiper-slide">
+              <img class="showcase__swiper-slide-image" src="img/showcase/slide2.png" alt="Mountains Slide">
+              <img class="showcase__swiper-slide-play" src="img/showcase/play-icon.png" alt="play icon">
+              <img class="showcase__swiper-slide-play-hovered" src="img/showcase/play-icon-hovered.png" alt="Play Icon Hovered">
+            </div>
+            <div class="swiper-slide showcase__swiper-slide">
+              <img class="showcase__swiper-slide-image" src="img/showcase/slide3.jpg" alt="Mountains Slide">
+              <img class="showcase__swiper-slide-play" src="img/showcase/play-icon.png" alt="play icon">
+              <img class="showcase__swiper-slide-play-hovered" src="img/showcase/play-icon-hovered.png" alt="Play Icon Hovered">
+            </div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev showcase__swiper-prev"><img src="img/arrow-prev.svg" alt="button previous"></div>
+          <div class="swiper-button-next showcase__swiper-next"><img src="img/arrow-next.svg" alt="button next"></div>
+        </div>
+        <!-- swiper container -->
+        </div>
+        <!-- /.showcase__places-box -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section showcase -->
   </main>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -318,6 +318,10 @@ html {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto; }
+  .container--middle {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; }
   .container--small {
     width: 90%;
     max-width: 1098px;
@@ -428,22 +432,31 @@ html {
     margin-top: 1.45rem; }
 
 .showcase {
-  background-color: #f7f4f2; }
+  background-color: #f7f4f2;
+  padding-bottom: 10rem; }
   .showcase__video-box {
     background: transparent url(../img/showcase/video-box.png) center/cover no-repeat;
     max-height: 506px;
+    max-width: 1002px;
     height: 50vh;
     position: relative;
     -webkit-transform: translateY(-61%);
         -ms-transform: translateY(-61%);
-            transform: translateY(-61%); }
+            transform: translateY(-61%);
+    margin: 0 auto;
+    margin-bottom: -14rem; }
   .showcase__video-play {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-transition: 1s background-color;
+    -o-transition: 1s background-color;
+    transition: 1s background-color;
+    cursor: pointer; }
   .showcase__video-title {
     margin: 0;
     padding-top: 6.5rem;
@@ -467,11 +480,108 @@ html {
     letter-spacing: normal;
     text-align: left;
     color: #dddddd; }
+  .showcase__places-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .showcase__places-title {
+    max-width: 275px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222222; }
+    .showcase__places-title--attention {
+      color: #ff6600; }
+  .showcase__places-text {
+    width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .showcase__places-all {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: none;
+    color: black; }
+    .showcase__places-all-icon {
+      padding-left: 1.3rem; }
+  .showcase__swiper-container {
+    width: 66.8%;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .showcase__swiper-slide {
+    background-color: white; }
+    .showcase__swiper-slide-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+      .showcase__swiper-slide-play-hovered {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+  .showcase__swiper-prev {
+    height: 54px;
+    width: 54px;
+    background: #f7f4f2;
+    border-radius: 50%; }
+    .showcase__swiper-prev::after {
+      content: ''; }
+  .showcase__swiper-next {
+    height: 54px;
+    width: 54px;
+    background: #f7f4f2;
+    border-radius: 50%; }
+    .showcase__swiper-next::after {
+      content: ''; }
 
 @media screen and (min-width: 991px) {
   .header__nav-link:hover {
     color: white;
-    border-bottom: 2px solid white; } }
+    border-bottom: 2px solid white; }
+  .showcase__video-play:hover {
+    background-color: #f7f4f2; }
+  .showcase__swiper-slide:hover {
+    background-color: #17bebb; }
+  .showcase__swiper-slide:hover .showcase__swiper-slide-image {
+    opacity: 0.18; }
+  .showcase__swiper-slide:hover .showcase__swiper-slide-play {
+    display: none; }
+  .showcase__swiper-slide:hover .showcase__swiper-slide-play-hovered {
+    display: block; } }
 
 @media screen and (max-width: 1200px) {
   html {

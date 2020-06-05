@@ -1,19 +1,24 @@
 .showcase
   background-color: #f7f4f2;
-  &__showcase-box
-    
+  padding-bottom: 10rem
   &__video
     &-box
       background: transparent url(../img/showcase/video-box.png) center / cover no-repeat
       max-height: 506px
+      max-width: 1002px
       height: 50vh
       position: relative
       transform: translateY(-61%)
+      margin: 0 auto
+      margin-bottom: -14rem
     &-play
       position: absolute
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
+      border-radius: 50%
+      transition: 1s background-color
+      cursor: pointer
     &-title
       margin: 0
       padding-top: 6.5rem
@@ -37,3 +42,73 @@
         letter-spacing: normal
         text-align: left
         color: #dddddd
+  &__places
+    &-box
+      display: flex
+      justify-content: space-between
+    &-title
+        max-width: 275px;
+        font-family: "Open Sans", sans-serif
+        font-size: 24px
+        font-weight: 600
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.5
+        letter-spacing: normal
+        text-align: left
+        color: #222222
+        &--attention
+          color: #ff6600
+    &-text
+      width: 25%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &-all
+      font-family: "Open Sans", sans-serif
+      font-size: 16px
+      font-weight: 600
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.75
+      letter-spacing: normal
+      text-align: left
+      text-decoration: none
+      color: black
+      &-icon
+        padding-left: 1.3rem
+  &__swiper
+    &-container
+      width: 66.8%
+      margin-left: auto
+      margin-right: 0
+      padding-left: 50px
+      padding-right: 50px
+    &-slide
+      background-color: white
+      &-play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        &-hovered
+          display: none
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+    &-prev
+      height: 54px
+      width: 54px
+      background: #f7f4f2
+      border-radius: 50% 
+      // left: -30px
+      &::after
+        content: ''
+    &-next
+      height: 54px
+      width: 54px
+      background: #f7f4f2
+      border-radius: 50%
+      &::after
+        content: ''
